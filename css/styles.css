@@ -1,4 +1,5 @@
 body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
@@ -10,31 +11,100 @@ body {
     grid-gap: 0 3px;
     grid-template-areas:
         "header header"
-        "navbar content"
+        "navbar container"
         "footer footer" ;
 }
 
 .header {
     grid-area: header;
-    background-color: orange;
+    background-color: #ffd400;
+    padding: 1em;
+}
+
+.header a {
+    text-decoration: none;
+    margin-right: 30px;
 }
 
 .navbar {
     grid-area: navbar;
-    background-color: yellowgreen;
-    border: 2px solid blue;
+    background-color: #2777ee;
+    color: antiquewhite;
+    font-weight: 800;
+    justify-content: right;
 }
 
-.content { grid-area: content; }
+.navbar ul li {
+    list-style-type:none;
+}
+
+.box {
+    padding: 1em;
+}
+
+.container { grid-area: container; }
 
 .footer {
     grid-area: footer;
     padding: 1em;
-    background-color: cadetblue;
+    background-color: #103099;
+    color: antiquewhite;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
+.scroller {
+    display: grid;
+    height: 300px;
+}
+
+.scroller-row {
+    display: flex;
+    height: 300px;
+    border-bottom: 1px solid white;
+}
+
+.scroller-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.scroller-item img {
+    height: 300px;
+    width: 300px;
+    border-right: 1px solid white;
+}
+
+.scroller-text {
+    color: white;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    bottom: -100px;
+    left: 0;
+}
+
+.scroller-text h4, p {
+    padding: 1em;
+}
+
+.scroller-text:hover {
+    bottom: 0;
+    background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, rgba(28,39,142,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(28,39,142,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(28,39,142,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1c278e',GradientType=0 ); /* IE6-9 */
+    transition: ease-in;
+    left: 0;
+}
 
 .box {
-    padding: 1em;
-    border: 2px solid rebeccapurple;
+    border: 2px solid white;
+}
+
+button {
+    background-color: #103099;
+    color: white;
 }
