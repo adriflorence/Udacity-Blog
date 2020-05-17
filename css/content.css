@@ -3,9 +3,12 @@
 }
 
 .content {
-    margin-left: 4em;
-    margin-top: 2em;
+    margin: 2em 4em;
     max-width: 1024px;
+}
+
+.content a {
+    color: #188fa7;
 }
 
 .box {
@@ -114,8 +117,20 @@
     border: 1px solid #c3e0e9;
 }
 
+.blog a {
+    text-decoration: none;
+}
+
+.blog a:hover {
+    text-decoration: underline;
+}
+
 .blog-post-date {
     color: grey;
     font-size: 12px;
     margin-block-start: 1.8em;
+}
+
+.blog-details span{
+    display: block;
 }

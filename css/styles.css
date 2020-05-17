@@ -14,12 +14,16 @@ button {
     padding: 10px;
     border: none;
     border-radius: 3px;
-    color: white;
+    color: aliceblue;
     cursor: pointer;
 }
 
 button:hover {
     background-color: #0e91ae;
+}
+
+figure {
+    margin: 0;
 }
 
 .grid-container {
