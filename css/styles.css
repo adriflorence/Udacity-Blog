@@ -1,5 +1,6 @@
 @import "header.css"; 
 @import "navigation.css"; 
+@import "about.css"; 
 @import "content.css"; 
 @import "footer.css"; 
 
@@ -26,13 +27,79 @@ figure {
     margin: 0;
 }
 
+.bordered {
+    border: 1px solid #c3e0e9;
+}
+
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* Font Awesome for Socials */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+  
+.fa:hover {
+    filter: brightness(120%);
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Mobile First */
+
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 0.2fr 3fr 0.2fr;
+    height: 95vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-gap: 0 3px;
     grid-template-areas:
-        "header header"
-        "navbar container"
-        "footer footer" ;
+        "header"
+        "navbar"
+        "container"
+        "about"
+        "footer";
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 900px) {
+    .grid-container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: auto;
+        grid-gap: 0 3px;
+        grid-template-areas:
+            "header header"
+            "navbar container"
+            "about container"
+            "footer footer";
+    }
+
+    .container {
+        max-width: 1280px;
+    }
 }

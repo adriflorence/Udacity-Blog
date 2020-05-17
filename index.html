@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Dive In</title>
         <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="grid-container">
@@ -21,17 +22,26 @@
                 <ul>
                     <li>
                         <ul>
-                            <li><a href="post1.html">Learn to dive</a></li>
-                            <li><a href="post2.html">Putting the suit on</a></li>
-                            <li><a href="post3.html">Blog</a></li>
-                            <li><a href="post4.html">Qualifications</a></li>
-                            <li><a href="post5.html">Hand signals</a></li>
-                            <li><a href="post6.html">Most jaw-dropping locations</a></li>
+                            <li><a href="page1.html" class="active">Learn to dive</a></li>
+                            <li><a href="page2.html">Putting the suit on</a></li>
+                            <li><a href="page3.html">Blog</a></li>
+                            <li><a href="page4.html">Qualifications</a></li>
+                            <li><a href="page5.html">Hand signals</a></li>
+                            <li><a href="page6.html">Most jaw-dropping locations</a></li>
                         </ul>
                     </li>
                 </ul>
 
-                <section class="about box">
+            </nav>
+            <div class="about">
+                <section class="bordered box">
+                    <h2>Share</h2>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </section>
+
+                <section class="bordered box">
                     <h2>About</h2>
                     This will be a blog about scuba diving. There will be more context uploaded, but for now you'll have to make do with fake text and stolen images. 
                 </section>
@@ -40,11 +50,11 @@
                     <button>Subscribe</button>
                     <button>Follow</button>
                 </section>
-            </nav>
+            </div>
             <div class="container">
-                <section class="content post">
+                <section class="content">
                     <h1>Dive In:</h1>
-                    <div class="post-row">
+                    <div class="flex-container">
                         <div class="post-item">
                             <img src="img/sea-lion-galapagos.jpg" alt="sea lion in galapagos"/>
                             <div class="post-text">
@@ -72,8 +82,6 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="post-row">
                         <div class="post-item">
                             <img src="img/from-above.jpg" alt="sea water shown from the sky"/>
                             <div class="post-text">
@@ -101,16 +109,13 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
                 </section>
             </div>
             <footer class="footer">
                 <span>adriflorence | 2020</span>
-                <span>
-                    <a href='https://www.padi.com/'>
-                        <img src="img/padi-logo.png">
-                    </a>
-                </span>
+                <a href='https://www.padi.com/'>
+                    <img src="img/padi-logo.png">
+                </a>
             </footer>
         </div>
     </body>
