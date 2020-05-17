@@ -1,0 +1,28 @@
+.center {
+    width: 800px;
+    margin: 0.6em auto 0;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header {
+    grid-area: header;
+    background: url('../img/header.jpg');
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    height: 3em;
+    padding: 1em;
+    display: flex;
+    font-size: 3em;
+}
+
+.header a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.header img {
+    height: 60px;
+    width: 60px;
+    filter: invert(100%); 
+}

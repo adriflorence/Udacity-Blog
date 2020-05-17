@@ -1,0 +1,17 @@
+.footer {
+    grid-area: footer;
+    padding: 1em;
+    background-color: #012032;
+    color: whitesmoke;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.footer img {
+    height: 40px;
+    margin-right: 40px;
+}

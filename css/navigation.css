@@ -1,0 +1,26 @@
+.navbar {
+    grid-area: navbar;
+    color: #188fa7;
+    font-weight: 800;
+    justify-content: right;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    font-weight: 800;
+    line-height: 2em;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #188fa7;
+}
+
+.navbar ul li a.active {
+    color: #023053;
+    font-weight: bold;
+}
+
+.about {
+    border: 1px dotted #023053;
+}
