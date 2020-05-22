@@ -2,7 +2,8 @@
 @import "navigation.css"; 
 @import "about.css"; 
 @import "content.css"; 
-@import "footer.css"; 
+@import "footer.css";
+@import "design_systems.css";
 
 body {
     font-family: Calibri, sans-serif;

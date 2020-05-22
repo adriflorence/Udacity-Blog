@@ -1,0 +1,22 @@
+.panel {
+    padding: 1em;
+    font-size: smaller;
+}
+
+.colour {
+    background-color: #04111c;
+    border-top: solid 1em #444c54;
+    border-radius: 1em;
+    height: auto;
+}
+
+.colour-display {
+    height: 50px;
+    width: 50px;
+    background: #1682a1;
+}
+
+.colour-detail {
+    color: white;
+    margin-left: 0.5em;
+}
