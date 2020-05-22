@@ -3,7 +3,7 @@
 @import "about.css"; 
 @import "content.css"; 
 @import "footer.css";
-@import "design_systems.css";
+@import "design_system.css";
 
 body {
     font-family: Calibri, sans-serif;
